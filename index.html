@@ -1,203 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Online Consultation | OrthoCure Clinic</title>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJH4M7N7');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to OrthoCure Bone & Joint Speciality Clinic in Chennai – Trusted orthopaedic care by Dr. Sumesh Subramanian. Book consultations online.">
+  <meta name="keywords" content="Orthopaedic Clinic Chennai, Dr. Sumesh Subramanian, OrthoCure, Bone and Joint Care, Ortho Specialist Thirumullaivoyal">
+  <meta name="author" content="Dr. Sumesh Subramanian">
+  <title>Home | OrthoCure Clinic</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f4f8;
-      color: #2c3e50;
-      margin: 0;
-      padding: 0;
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f9f8; color: #2c3e50; }
+    header, footer { background: #002B36; color: white; text-align: center; padding: 20px; }
+    nav { background: #007B5E; display: flex; justify-content: center; gap: 20px; padding: 10px; position: sticky; top: 0; z-index: 999; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #FFE082; }
+    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    h2 { color: #007B5E; }
+    .hero {
+      background: url('/assets/hero-bg.jpg') center/cover no-repeat;
+      color: white; text-align: center; padding: 100px 20px;
+      background-color: #007B5E;
     }
-    header, .container, .confirmation {
-      max-width: 720px;
-      margin: 30px auto;
-      padding: 20px;
+    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; }
+    .cta {
+      background: #007B5E; color: white; padding: 20px; text-align: center; border-radius: 8px;
+      margin-top: 30px;
     }
-    header {
-      background-color: #ffffff;
-      text-align: center;
-      padding: 30px 20px;
-      border-bottom: 1px solid #ddd;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    .cta a { background: white; color: #007B5E; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    .cta a:hover { background: #e0f2f1; }
+    .floating-whatsapp {
+      position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white;
+      padding: 12px 14px; border-radius: 50%; font-size: 24px; text-align: center; z-index: 10000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    header img {
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 10px;
+    .floating-whatsapp:hover { background: #1ebe5d; }
+    footer p { font-size: 14px; margin: 5px 0; }
+    footer a { color: #66d9ef; text-decoration: none; }
+    .affiliation-badges {
+      margin-top: 10px;
     }
-    header h2 {
-      margin: 5px 0 0;
-      font-size: 1.5rem;
+    .affiliation-badges img {
+      height: 50px;
+      margin: 0 12px;
+      vertical-align: middle;
     }
-    .tagline {
-      font-size: 14px;
-      color: #888;
-      margin-top: 5px;
-    }
-    form {
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
-    }
-    label {
-      font-weight: 600;
-      display: block;
-      margin-top: 18px;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 6px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 15px;
-      transition: border-color 0.3s ease;
-    }
-    input:focus, select:focus, textarea:focus {
-      border-color: #0e4a6e;
-      outline: none;
-    }
-    button {
-      margin-top: 25px;
-      width: 100%;
-      background-color: #0e4a6e;
-      color: white;
-      padding: 14px;
-      border: none;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #09314b;
-    }
-    .disclaimer {
-      font-size: 13px;
-      color: #777;
-      margin-top: 20px;
-      text-align: center;
-    }
-    .confirmation {
-      display: none;
-      background: #f0fff4;
-      border-left: 5px solid #2ecc71;
-      border-radius: 10px;
-      padding: 40px;
-      text-align: center;
-    }
-    .confirmation h3 {
-      margin-top: 0;
-      color: #2c3e50;
-      font-size: 22px;
-    }
-    .confirmation p {
-      color: #333;
-      font-size: 15px;
-      line-height: 1.6;
+    @media (max-width: 600px) {
+      nav { flex-direction: column; align-items: center; }
+      section { padding: 0 15px; }
+      header h1, footer p { font-size: 1.2em; }
+      .floating-whatsapp { font-size: 20px; padding: 10px; }
+      .affiliation-badges img { height: 38px; margin: 0 6px; }
     }
   </style>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4M7N7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <header>
-    <img src="dp.jpg" alt="Dr. Sumesh Subramanian" />
-    <h2>Dr. Sumesh Subramanian</h2>
-    <p class="tagline">OrthoCure Bone & Joint Speciality Clinic<br>Start Healing. Stay Moving.</p>
+    <h1>OrthoCure Bone & Joint Speciality Clinic</h1>
+    <p><em>Start Healing. Stay Moving.</em></p>
   </header>
 
-  <div class="container">
-    <form id="consultForm" method="post">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/consult/">Consult</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
 
-      <label for="age">Age</label>
-      <input type="number" id="age" name="age" required>
+  <section class="hero">
+    <h1>Expert Orthopaedic Care in Thirumullaivoyal</h1>
+    <p>Led by Dr. Sumesh Subramanian, MS Ortho, Fellowship in Arthroplasty</p>
+  </section>
 
-      <label for="gender">Gender</label>
-      <select id="gender" name="gender" required>
-        <option value="">--Select Gender--</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-        <option value="Other">Other</option>
-      </select>
+  <section>
+    <h2>Why Choose OrthoCure?</h2>
+    <ul>
+      <li>✅ Trusted by hundreds of patients for bone and joint care</li>
+      <li>✅ Located conveniently in Thirumullaivoyal</li>
+      <li>✅ Modern imaging & evidence-based treatment</li>
+    </ul>
 
-      <label for="phone">WhatsApp Number</label>
-      <input type="tel" id="phone" name="phone" required>
-
-      <label for="issue">Primary Complaint / Issue</label>
-      <textarea id="issue" name="issue" required></textarea>
-
-      <label for="day">Preferred Day</label>
-      <select id="day" name="day" required>
-        <option value="">--Select Day--</option>
-        <option value="Monday">Monday</option>
-        <option value="Tuesday">Tuesday</option>
-        <option value="Wednesday">Wednesday</option>
-        <option value="Thursday">Thursday</option>
-        <option value="Friday">Friday</option>
-        <option value="Saturday">Saturday</option>
-      </select>
-
-      <label for="slot">Preferred Time Slot</label>
-      <select id="slot" name="slot" required>
-        <option value="">--Select Slot--</option>
-        <option value="10AM - 1PM">10AM – 1PM</option>
-        <option value="2PM - 4PM">2PM – 4PM</option>
-        <option value="5PM - 9PM">5PM – 9PM</option>
-      </select>
-
-      <label for="exactTime">Preferred Time (Optional)</label>
-      <input type="text" id="exactTime" name="exactTime" placeholder="e.g. after 7PM">
-
-      <label for="email">Your Email (for confirmation)</label>
-      <input type="email" id="email" name="email" required>
-
-      <label class="consent-label">
-        <input type="checkbox" required> I agree to the terms of online consultation and consent to share my information.
-      </label>
-
-      <button type="submit">Submit Consultation Request</button>
-      <p class="disclaimer">This form complies with the Telemedicine Practice Guidelines, Govt. of India.</p>
-    </form>
-
-    <div id="confirmationMessage" class="confirmation">
-      <h3>✅ Thank You!</h3>
-      <p>Your consultation request has been submitted successfully.</p>
-      <p>You will be contacted shortly via WhatsApp to confirm your appointment time.</p>
-      <p>Once confirmed, the payment link will be shared with you. Kindly wait for confirmation before proceeding to payment.</p>
-      <p class="disclaimer">— OrthoCure Bone & Joint Speciality Clinic</p>
+    <div class="cta">
+      <h3>Need Consultation?</h3>
+      <a href="/consult/">Book Online Now</a>
     </div>
-  </div>
+  </section>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("consultForm");
-      const confirmation = document.getElementById("confirmationMessage");
-      const scriptURL = "https://script.google.com/macros/s/AKfycbz-7jTWPMgq8zMb3eGNGkJ3yK3T2HaZZgCdXNetm6TsigHtBHZr18TUjyU6UgK5IRI/exec";
+  <a class="floating-whatsapp" href="https://wa.me/919677253746" title="Chat on WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then(response => {
-            if (response.ok) {
-              form.style.display = "none";
-              confirmation.style.display = "block";
-            } else {
-              alert("Something went wrong. Please try again.");
-            }
-          })
-          .catch(error => {
-            console.error("Error!", error.message);
-            alert("There was an error submitting your request.");
-          });
-      });
-    });
-  </script>
+  <footer>
+    <div class="affiliation-badges">
+      <img src="/assets/ioa-badge.png" alt="IOA Member">
+      <img src="/assets/tnoa-badge.png" alt="TNOA Member">
+      <p><small>Proud Member – Indian Orthopaedic Association (IOA) & Tamil Nadu Orthopaedic Association (TNOA)</small></p>
+    </div>
+    <p>© 2025 Dr. Sumesh Subramanian | OrthoCure Bone & Joint Speciality Clinic</p>
+    <p>📍 Thirumullaivoyal, Chennai &nbsp;|&nbsp; <a href="mailto:drsumesh.ortho@gmail.com">drsumesh.ortho@gmail.com</a> &nbsp;|&nbsp; TNMC Reg No: 119811</p>
+    <p><small>Website built with ❤ by Dr. Sumesh & D</small></p>
+  </footer>
+
 </body>
 </html>
